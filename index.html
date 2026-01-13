@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Марк и Валерия</title>
+    <link rel="stylesheet" href="./fonts/fonts.css" />
+    <link rel="stylesheet" href="./styles/global.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <!-- <link rel="icon" href="./images/favicon.ico" sizes="any" /> надо сделать иконочку!!! -->
+    <!-- <link rel="icon" href="./images/favicon.svg" type="image/svg+xml" /> -->
+    <script src="scripts/script.js" defer></script>
+  </head>
+  <body class="page">
+    <section class="hero">
+      <div class="hero__collage">
+        <img src="images/photo1.jpg" alt="фотобудка" class="photo photo--1" />
+        <img src="images/photo2.jpg" alt="фотобудка" class="photo photo--2" />
+        <img src="images/photo3.jpg" alt="фотобудка" class="photo photo--3" />
+
+        <!-- сердце как svg -->
+        <svg
+          class="heart hand-drawn"
+          viewBox="0 0 600 520"
+          xmlns="http://www.w3.org/2000/svg"
+          aria-hidden="true"
+        >
+          <!-- основной штрих -->
+          <path
+            class="heart-line main"
+            d="
+              M300 470
+              C120 350, 40 220, 110 140
+              C170 80, 260 120, 300 190
+              C340 120, 440 80, 500 150
+              C560 230, 470 360, 300 470
+            "
+          />
+
+          <!-- второй «неровный» проход -->
+          <path
+            class="heart-line ghost"
+            d="
+              M305 465
+              C130 345, 55 230, 120 150
+              C180 95, 255 135, 300 200
+              C350 135, 430 95, 485 155
+              C545 240, 460 355, 305 465
+            "
+          />
+        </svg>
+      </div>
+
+      <div class="hero__text">
+        <h1>
+          Марк и Валерия<br />
+          женятся
+        </h1>
+
+        <p class="hero__meta">
+          30 мая, 2026· 17:00<br />
+          "Фермерский буфет", Истра
+        </p>
+
+        <p class="hero__note">
+          После церемонии - ужин, танцы и бадминтон на траве
+        </p>
+      </div>
+    </section>
+    <div class="grain"></div>
+  </body>
+</html>

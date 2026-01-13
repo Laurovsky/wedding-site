@@ -1,0 +1,60 @@
+/* Глобальные стили для проекта, их можно дополнять и менять по желанию */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: 'IBM Plex mono', Arial, sans-serif, sans-serif;
+
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header, 
+main, 
+footer {
+  margin: 0;
+  padding: 0;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Cormorant Garamond', Arial, sans-serif, sans-serif;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+picture {
+  margin: 0;
+  padding: 0;
+}
+
+button,
+a {
+  color: currentColor;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
