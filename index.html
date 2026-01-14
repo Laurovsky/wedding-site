@@ -14,9 +14,15 @@
   <body class="page">
     <section class="hero">
       <div class="hero__collage">
-        <img src="images/photo1.jpg" alt="фотобудка" class="photo photo--1" />
-        <img src="images/photo2.jpg" alt="фотобудка" class="photo photo--2" />
-        <img src="images/photo3.jpg" alt="фотобудка" class="photo photo--3" />
+        <div class="photo-frame photo-frame-1">
+          <img src="images/photo1.jpg" alt="фотобудка" class="photo photo--1" />
+        </div>
+        <div class="photo-frame photo-frame-2"> 
+          <img src="images/photo2.jpg" alt="фотобудка" class="photo photo--2" />
+        </div>  
+        <div class="photo-frame photo-frame-3"> 
+          <img src="images/photo3.jpg" alt="фотобудка" class="photo photo--3" />
+        </div> 
 
         <!-- сердце как svg -->
         <svg
@@ -37,17 +43,6 @@
             "
           />
 
-          <!-- второй «неровный» проход -->
-          <path
-            class="heart-line ghost"
-            d="
-              M305 465
-              C130 345, 55 230, 120 150
-              C180 95, 255 135, 300 200
-              C350 135, 430 95, 485 155
-              C545 240, 460 355, 305 465
-            "
-          />
         </svg>
       </div>
 

@@ -31,3 +31,12 @@
   font-weight: bold;
   font-display: swap;
 }
+@font-face {
+    font-family: 'Playfair Display';
+    src: 
+      url('PlayfairDisplay-SemiBoldItalic.woff2') format('woff2'),
+      url('PlayfairDisplay-SemiBoldItalic.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
