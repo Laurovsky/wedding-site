@@ -4,7 +4,8 @@
 }
 
 .hero,
-.date {
+.date,
+.info {
   display: flex;
   flex-direction: column;
   height: 100vh;
@@ -101,14 +102,15 @@
 
 .date_heart {
   transform: rotate(113deg);
-  width: 91%;
+  width: 105%;
   position: absolute;
-  top: 0%;
+  top: -11%;
   z-index: 0;
 }
 
 .date_note,
-.date_note_location {
+.date_note_location,
+.dresscode_info {
   color: #f7f3ed;
   z-index: 1;
   top: 25%;
@@ -151,4 +153,10 @@
 .button_text {
   color: #f7f3ed;
   text-transform: lowercase;
+}
+
+.dresscode_info {
+  color: #ce0b2d;
+  font-weight: bold;
+  text-align: center;
 }
