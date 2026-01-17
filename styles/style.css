@@ -1,39 +1,39 @@
-body {
+.page {
   color: #1a1a1a;
   background: #f7f3ed;
+}
+
+.hero,
+.date {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  max-width: 480px;
   margin-inline: auto;
 }
 
-.hero {
+.hero__text {
   display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  max-width: 480px;
+  justify-content: center;
 }
 
 .hero_photo_text {
   display: block;
-  margin-block-start: 20px;
-  margin-inline-start: 75px;
   width: 80%;
-  align-self: center;
-  /* filter: drop-shadow(0 6mm 4mm rgba(88, 6, 6, 0.8)); */
-
 }
 
 .hero__collage {
   position: relative;
+  flex: 0 0 60%;
   width: 100%;
-  height: 450px;
-  margin: 0 auto;
 }
 
 .photo-frame {
   position: relative;
   background: #eee9df;
   padding: 18px;
-  box-shadow:  0 12px 30px rgba(0, 0, 0, 0.2);
-  width: 260px;  
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+  width: 260px;
   border-radius: 12px;
 }
 
@@ -48,16 +48,10 @@ body {
 
 .photo-frame-3 {
   position: absolute;
-  z-index: -1;
-  top: -2%;
+  top: 2%;
   left: 8%;
   transform: rotate(-6deg);
   aspect-ratio: 3/4;
-}
-
-.photo-base {
-  width: 100%;
-  display: block;
 }
 
 .photo-foreground {
@@ -74,20 +68,6 @@ body {
   overflow: hidden; /* ← ВОТ ГДЕ РЕЖЕМ */
 }
 
-/* микро-пыль */
-/* .photo-frame::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-image: url("../images/dust.png");
-  background-size: cover;
-  opacity: 0.2;
-  pointer-events: none;
-  z-index: 1;
-} */
-
-
-
 .heart-decoration {
   position: absolute;
   width: 20%;
@@ -103,13 +83,15 @@ body {
   bottom: -3%;
 }
 
-.date {
+.note_collage {
   display: flex;
   position: relative;
   flex-direction: column;
-  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
   max-width: 480px;
-  /* border:1px solid red; */
+  height: 60vh;
+  gap: 20px;
 }
 
 .date_invite {
@@ -119,32 +101,33 @@ body {
 
 .date_heart {
   transform: rotate(113deg);
-  width: 86%;
-  margin-left: 8px;
+  width: 91%;
+  position: absolute;
+  top: 0%;
+  z-index: 0;
 }
 
 .date_note,
 .date_note_location {
   color: #f7f3ed;
-  position: absolute;
-  top: 33%;
-  left: 13%;
+  z-index: 1;
+  top: 25%;
+  left: 18%;
   inline-size: 228px;
+  font-size: clamp(13px, 3.5vw, 16px);
 }
 
 .date_place {
-  position: absolute;
+  z-index: 1;
   width: 34%;
   top: 48%;
   left: 33%;
 }
 
 .date_note_location {
-  top: 58%;
+  top: 63%;
   left: 25%;
-  font-size: 16px;
   letter-spacing: 0.08em;
-  /* text-transform: lowercase; */
   text-align: center;
 }
 
@@ -168,17 +151,4 @@ body {
 .button_text {
   color: #f7f3ed;
   text-transform: lowercase;
-
 }
-
-/* зернистость */
-/* .grain {
-  position: fixed;
-  inset: 0;
-  z-index: 9999;
-  opacity: 0.1;
-
-  background-image: url("../images/noise.png");
-  pointer-events: none;
-  mix-blend-mode: multiply;
-} */
