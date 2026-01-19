@@ -5,7 +5,8 @@
 
 .hero,
 .date,
-.info {
+.info,
+.form {
   display: flex;
   overflow: hidden;
   flex-direction: column;
@@ -115,7 +116,8 @@
 .date_note,
 .date_note_location,
 .dresscode_info,
-.event-program-time_text {
+.event-program-time_text,
+.form_note {
   color: #f7f3ed;
   z-index: 1;
   top: 28%;
@@ -252,12 +254,79 @@
 
 .c4 {background-color: #131313;}
 
+.form .heart-wrapper {
+  height: 100vh;
+}
+
+.form_title,
+.form_note,
+.form.button,
+.goodbye_title {
+ position: absolute;
+ z-index: 2;
+}
+
+.form_title {
+  width: 30%;
+  top: 15%;
+  right: 20%;
+}
+
+.form .date_heart {
+  position: absolute;
+  width: 120%;
+}
+
+.form_note {
+  top: 22%;
+  right: 20%;
+  inline-size: 360px;
+  block-size: 100px;
+  text-align: center;
+}
+
+.form.button {
+  top: 37%;
+  right: 25%;
+  background-color: #f7f3ed;
+  width: 210px;
+  height: 40px;
+}
+
+.form.button .button_text {
+  color: rgb(206 11 45);
+  font-weight: bold;
+}
+
+.goodbye_title {
+  width: 60%;
+  bottom: 40%;
+  right: 10%;
+}
+
 @media (height < 800px) {
   .date_heart {
     width: 80%;
   }
 
+  .form .date_heart {
+    width: 100%;
+  }
+  
+  .form_note {
+    font-size: 13px;
+  }
+  
+  .goodbye_title {
+    width: 50%;
+  }
+
   .date_place {
     width: 30%;
   }
+
+  .button.map {
+    margin-top: 50px;
+  }
+
 }
