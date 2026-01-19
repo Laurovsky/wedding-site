@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
@@ -47,13 +47,15 @@
         class="date_invite"
       />
       <div class="note_collage">
-        <img src="images/heart2.png" alt="сердце" class="date_heart" />
-        <p class="date_note">
-          с радостью приглашаем вас разделить с нами один из самых важных дней в
-          нашей жизни - наш свадебный день
-        </p>
-        <img src="images/place.png" alt="сердце" class="date_place" />
-        <p class="date_note_location">"Фермерский буфет", Истра</p>
+        <div class="heart-wrapper">
+          <img src="images/heart2.png" alt="сердце" class="date_heart" />
+          <p class="date_note">
+            с радостью приглашаем вас разделить с нами один из самых важных дней
+            в нашей жизни - наш свадебный день
+          </p>
+          <img src="images/place.png" alt="место" class="date_place" />
+          <p class="date_note_location">"Фермерский буфет", Истра</p>
+        </div>
       </div>
       <a
         class="button map"
@@ -64,18 +66,57 @@
       </a>
     </section>
     <section class="info">
-    <div class="event-program">
-
-    </div>
-    <div class="dresscode">
-    <p class="dresscode_info">мы очень ждем и с удовольствием готовимся к нашему дню! будет здорово, если своими нарядами вы поддержите палитру нашей свадьбы!</p>
-    <div class="dresscode_palitre">
-      <img class="palitre1" />
-      <img class="palitre2" />
-      <img class="palitre3" />
-      <img class="palitre4" />
-    </div>
-    </div>
+      <div class="event-program-title">
+        <img
+          class="event-program_image"
+          src="./images/programm.png"
+          alt="программа"
+        />
+        <img
+          class="event-program_image"
+          src="./images/wedding.png"
+          alt="свадьбы"
+        />
+      </div>
+      <div class="event-program-time">
+        <div class="event-program-time_wrapper">
+          <img
+            src="./images/sixteen.png"
+            alt="16:00"
+            class="event-program-time_image"
+          />
+          <p class="event-program-time_text">Сбор гостей</p>
+          <img
+            src="./images/Sixteen-thirty.png"
+            alt="16:30"
+            class="event-program-time_image"
+          />
+          <p class="event-program-time_text">Выездная церемония</p>
+          <img
+            src="./images/seventeen.png"
+            alt="17:00"
+            class="event-program-time_image"
+          />
+          <p class="event-program-time_text">Вечеринка</p>
+        </div>
+        <img
+          class="event-program-time_photo"
+          src="./images/event-time-photo.png"
+          alt="наше фото"
+        />
+      </div>
+      <div class="dresscode">
+        <img src="./images/dresscode.png" alt="дресс-код" class="dresscode_title">
+        <p class="dresscode_info">
+          мы очень ждем и с удовольствием готовимся к нашему дню! будет здорово,
+          если своими нарядами вы поддержите палитру нашей свадьбы!
+        </p>
+        <div class="dresscode_palette">
+          <div class="color c1"></div> 
+          <div class="color c2"></div> 
+          <div class="color c3"></div> 
+          <div class="color c4"></div>
+      </div>
     </section>
   </body>
 </html>

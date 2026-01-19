@@ -7,6 +7,7 @@
 .date,
 .info {
   display: flex;
+  overflow: hidden;
   flex-direction: column;
   height: 100vh;
   max-width: 480px;
@@ -84,50 +85,61 @@
   bottom: -3%;
 }
 
-.note_collage {
-  display: flex;
-  position: relative;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  max-width: 480px;
-  height: 60vh;
-  gap: 20px;
-}
-
 .date_invite {
   width: 80%;
   align-self: center;
 }
 
+.note_collage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 480px;
+  height: 60vh;
+  gap: 20px;
+}
+
+.heart-wrapper {
+ position: relative;
+ width: 100%;
+ max-width: 480px;
+}
+
 .date_heart {
   transform: rotate(113deg);
   width: 105%;
-  position: absolute;
-  top: -11%;
   z-index: 0;
 }
 
 .date_note,
 .date_note_location,
-.dresscode_info {
+.dresscode_info,
+.event-program-time_text {
   color: #f7f3ed;
   z-index: 1;
-  top: 25%;
+  top: 28%;
   left: 18%;
   inline-size: 228px;
   font-size: clamp(13px, 3.5vw, 16px);
 }
 
+.date_note,
+.date_note_location {
+  position: absolute;
+}
+
+
 .date_place {
+  position: absolute;
   z-index: 1;
-  width: 34%;
-  top: 48%;
-  left: 33%;
+  width: 38%;
+  top: 52%;
+  left: 28%;
 }
 
 .date_note_location {
-  top: 63%;
+  top: 70%;
   left: 25%;
   letter-spacing: 0.08em;
   text-align: center;
@@ -144,10 +156,11 @@
   border: none;
   border-radius: 40px;
   text-decoration: none;
+  z-index: 2;
 }
 
 .button.map {
-  margin-top: 50px;
+  margin-top: 100px;
 }
 
 .button_text {
@@ -155,8 +168,96 @@
   text-transform: lowercase;
 }
 
-.dresscode_info {
+.event-program-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-block-start: 15px;
+}
+
+.event-program_image {
+  display: block;
+  width: 40%;
+}
+
+.event-program_image:last-child {
+  align-self: flex-end;
+  margin-inline-end: 80px;
+}
+
+.event-program-time {
+  display: flex;
+  justify-content: flex-start;
+  margin-block: 40px;
+}
+
+.event-program-time_wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-inline-start: 30px;
+}
+
+.event-program-time_photo {
+  display: block;
+  transform: rotate(-90deg);
+  width: 50%;
+}
+
+.dresscode_info,
+.event-program-time_text {
   color: #ce0b2d;
-  font-weight: bold;
+  text-transform: lowercase;
+}
+
+.event-program-time_image {
+  display: block;
+  width: 100px;
+}
+
+.dresscode {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.dresscode_title {
+  display: block;
+  width: 50%;
+}
+
+.dresscode_info {
+  /* font-weight: bold; */
   text-align: center;
+  inline-size: 285px;
+}
+
+.dresscode_palette {
+  display: flex;
+  gap: 25px;
+}
+
+.color {
+  width: 55px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.c1 {background-color: #dadada;}
+
+.c2 {background-color: #f5e9d9;}
+
+.c3 {background-color: #64181c;}
+
+.c4 {background-color: #131313;}
+
+@media (height < 800px) {
+  .date_heart {
+    width: 80%;
+  }
+
+  .date_place {
+    width: 30%;
+  }
 }
