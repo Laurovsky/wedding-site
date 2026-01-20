@@ -266,26 +266,53 @@
  z-index: 2;
 }
 
-.form_title {
-  width: 30%;
-  top: 15%;
-  right: 20%;
-}
+
 
 .form .date_heart {
   position: absolute;
   width: 120%;
+  left: -8%;
+}
+
+.form_note-wrapper {
+  display: flex;
+  flex-direction: column;
+  /* gap: 10px; */
+  top: 14%;
+  align-items: center;
+  justify-content: space-around;
+  position: absolute;
+  width: 366px;
+  height: 280px;
+}
+
+.form_title {
+  position: static;
+
+  width: 30%;
+  margin-inline-start: 95px;
+
+  /* top: 15%;
+  right: 20%; */
 }
 
 .form_note {
-  top: 22%;
-  right: 20%;
+  position: static;
+
+  /* top: 22%;
+  right: 20%; */
+  margin-inline-start: 50px;
+  margin-block-start: 20px;
   inline-size: 360px;
   block-size: 100px;
   text-align: center;
 }
 
+
+
 .form.button {
+  position: static;
+
   top: 37%;
   right: 25%;
   background-color: #f7f3ed;
@@ -299,9 +326,13 @@
 }
 
 .goodbye_title {
+  position: static;
+
   width: 60%;
-  bottom: 40%;
-  right: 10%;
+  margin-block-start: 35px;
+
+  /* bottom: 40%;
+  right: 10%; */
 }
 
 @media (height < 800px) {
@@ -310,7 +341,7 @@
   }
 
   .form .date_heart {
-    width: 100%;
+    /* width: 100%; */
   }
   
   .form_note {
@@ -318,7 +349,7 @@
   }
   
   .goodbye_title {
-    width: 50%;
+    /* width: 50%; */
   }
 
   .date_place {
