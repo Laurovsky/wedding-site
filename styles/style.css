@@ -17,12 +17,14 @@
 
 .hero__text {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
+  margin-block-start: 10px;
 }
 
 .hero_photo_text {
   display: block;
-  width: 80%;
+  width: 45%;
+  margin-left: 10px;
 }
 
 .hero__collage {
@@ -51,7 +53,7 @@
 
 .photo-frame-3 {
   position: absolute;
-  top: 2%;
+  top: 4%;
   left: 8%;
   transform: rotate(-6deg);
   aspect-ratio: 3/4;
@@ -73,17 +75,18 @@
 
 .heart-decoration {
   position: absolute;
-  width: 20%;
-  right: 18%;
-  bottom: 12%;
-  transform: rotate(-8deg);
+  width: 130px;
+  right: 25%;
+  top: 2%;
+  /* bottom: 12%; */
+  transform: rotate(-0deg);
 }
 
 .date-decoration {
   position: absolute;
-  width: 60%;
-  right: 2%;
-  bottom: -3%;
+  width: 46%;
+  right: 10%;
+  bottom: 0%;
 }
 
 .date_invite {
@@ -123,7 +126,7 @@
   top: 28%;
   left: 18%;
   inline-size: 228px;
-  font-size: clamp(13px, 3.5vw, 16px);
+  font-size: clamp(0.9rem, 0.85rem + 0.3vw, 1.1rem);
 }
 
 .date_note,
@@ -230,7 +233,6 @@
 }
 
 .dresscode_info {
-  /* font-weight: bold; */
   text-align: center;
   inline-size: 285px;
 }
@@ -246,13 +248,13 @@
   border-radius: 50%;
 }
 
-.c1 {background-color: #dadada;}
+.c1 {background-color: rgb(242, 232, 201);}
 
-.c2 {background-color: #f5e9d9;}
+.c2 {background-color: rgb(154, 206, 235);}
 
-.c3 {background-color: #64181c;}
+.c3 {background-color: rgb(186, 219, 173);}
 
-.c4 {background-color: #131313;}
+.c4 {background-color: rgb(255, 193, 204);}
 
 .form .heart-wrapper {
   height: 100vh;
@@ -301,7 +303,7 @@
 
   /* top: 22%;
   right: 20%; */
-  margin-inline-start: 50px;
+  /* margin-inline-start: 50px; */
   margin-block-start: 20px;
   inline-size: 360px;
   block-size: 100px;
@@ -328,7 +330,7 @@
 .goodbye_title {
   position: static;
 
-  width: 60%;
+  width: 50%;
   margin-block-start: 35px;
 
   /* bottom: 40%;
