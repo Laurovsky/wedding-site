@@ -185,12 +185,18 @@
   width: 40%;
 }
 
+.event-program_image:first-child {
+  width: 50%;
+}
+
 .event-program_image:last-child {
   align-self: flex-end;
   margin-inline-end: 80px;
 }
 
 .event-program-time {
+  position: relative;
+  left: -7%;
   display: flex;
   justify-content: flex-start;
   margin-block: 40px;
@@ -199,14 +205,15 @@
 .event-program-time_wrapper {
   display: flex;
   flex-direction: column;
-  gap: 5px;
-  margin-inline-start: 30px;
+  gap: 7px;
+  margin-inline-start: 5px;
 }
 
 .event-program-time_photo {
   display: block;
-  transform: rotate(-90deg);
-  width: 50%;
+  transform: rotate(0deg);
+  width: 225px;
+  height: auto;
 }
 
 .dresscode_info,
@@ -258,6 +265,10 @@
 
 .form .heart-wrapper {
   height: 100vh;
+}
+
+.form {
+  margin-block-start: 10px;
 }
 
 .form_title,
@@ -347,7 +358,7 @@
   }
   
   .form_note {
-    font-size: 13px;
+    /* font-size: 13px; */
   }
   
   .goodbye_title {
