@@ -127,7 +127,7 @@
   top: 28%;
   left: 18%;
   inline-size: 228px;
-  font-size: clamp(0.9rem, 0.85rem + 0.3vw, 1.1rem);
+  font-size: clamp(0.9rem, 0.85rem + 0.3vw, 1rem);
 }
 
 .date_note,
@@ -447,7 +447,10 @@ font-size: 30px;
   .details .form_note:first-of-type {
     margin-block-start: 25px;
     margin-inline-start: 135px;
+  }
 
+  .details .form_note:first-of-type  {
+    inline-size: 259px;
   }
 
   .details .form_note-wrapper {
