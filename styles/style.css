@@ -6,6 +6,7 @@
 .hero,
 .date,
 .info,
+.details,
 .form {
   display: flex;
   overflow: hidden;
@@ -107,7 +108,6 @@
 
 .heart-wrapper {
  position: relative;
- width: 100%;
  max-width: 480px;
 }
 
@@ -238,7 +238,7 @@ font-size: 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 30px;
+  gap: 25px;
 }
 
 .dresscode_title {
@@ -254,6 +254,7 @@ font-size: 30px;
 .dresscode_palette {
   display: flex;
   gap: 25px;
+  z-index: 3;
 }
 
 .color {
@@ -270,16 +271,70 @@ font-size: 30px;
 
 .c4 {background-color: rgb(255, 193, 204);}
 
+.details {
+  margin-block-start: 15px;
+}
+
+.details_title-group {
+  width: 70% ;
+  align-self: center;
+}
+
+.details .button {
+  margin-top: 50px;
+}
+
+.details_decoration {
+  position: absolute;
+  width: 45%;
+  top: -23%;
+  right: -7%;
+  transform: rotate(-45deg);
+}
+
+.details_decoration.present {
+    top: 32%;
+    right: 0%;
+    left: -19%;  
+    width: 65%;
+    transform: rotate(45deg);
+}
+
+.details .heart-wrapper {
+  top: 3%;
+}
+
+.details .form_note:first-of-type {
+  inline-size: 230px;
+}
+
+.details .form_note-wrapper {
+  position: absolute;
+  top: 0%;
+  gap: 30px;
+}
+
+.details .form_title {
+  margin-inline-start: 0px;
+}
+
+.details .date_heart {
+  transform: rotate(-56deg);
+  width: 120%;
+}
+
+
 .form .heart-wrapper {
   position: relative;
-  width: 100%;
   max-width: 480px;
   margin: 0 auto;
 }
 
-.form {
+.form  {
   margin-block-start: 10px;
 }
+
+
 
 .form_title,
 .form_note,
@@ -302,7 +357,12 @@ font-size: 30px;
 
 .date_heart.first {
   transform: rotate(-80deg);
-  width: 105%;
+  width: 98%;
+
+}
+
+.button.form.first{
+  margin-inline-start: 135px;
 }
 
 .form_note-wrapper {
@@ -321,10 +381,21 @@ font-size: 30px;
   position: static;
 
   width: 30%;
-  margin-inline-start: 95px;
+  margin-inline-start: 130px;
 
   /* top: 15%;
   right: 20%; */
+}
+
+.form_title.first {
+    margin-inline-start: 0px;
+
+}
+
+.form_note-wrapper.first {
+  top: 25%;
+  right: 10%;
+    justify-content: center;
 }
 
 .form_note {
@@ -332,7 +403,7 @@ font-size: 30px;
 
   /* top: 22%;
   right: 20%; */
-  /* margin-inline-start: 50px; */
+  margin-inline-start: 50px;
   margin-block-start: 20px;
   inline-size: 360px;
   block-size: 100px;
@@ -366,6 +437,27 @@ font-size: 30px;
   right: 10%; */
 }
 
+@media (height <= 750px) {
+  .info, .date, .form {
+    overflow: visible;
+  }
+}
+
+@media (width > 450px) {
+  .details .form_note:first-of-type {
+    margin-block-start: 25px;
+    margin-inline-start: 135px;
+
+  }
+
+  .details .form_note-wrapper {
+    gap: 70px;  
+  }
+  .details_decoration {
+    right: -25%;
+  }
+}
+
 @media (height < 800px) {
   .date_heart {
     width: 80%;
@@ -397,7 +489,10 @@ font-size: 30px;
 .hero,
 .date,
 .info,
+.details,
 .form {
   overflow: visible;
 }
+
+
 }
