@@ -16,6 +16,7 @@
 }
 
 .hero__text {
+  position: relative;
   display: flex;
   justify-content: flex-start;
   margin-block-start: 10px;
@@ -209,6 +210,12 @@
   margin-inline-start: 5px;
 }
 
+.time{
+font-weight: bold;
+color: #ce0b2d;
+font-size: 30px;
+}
+
 .event-program-time_photo {
   display: block;
   transform: rotate(0deg);
@@ -264,7 +271,10 @@
 .c4 {background-color: rgb(255, 193, 204);}
 
 .form .heart-wrapper {
-  height: 100vh;
+  position: relative;
+  width: 100%;
+  max-width: 480px;
+  margin: 0 auto;
 }
 
 .form {
@@ -283,18 +293,26 @@
 
 .form .date_heart {
   position: absolute;
+  inset: 0;
   width: 120%;
-  left: -8%;
+  /* height: 100%; */
+  /* object-fit: contain; */
+  /* left: -8%; */
+}
+
+.date_heart.first {
+  transform: rotate(-80deg);
+  width: 105%;
 }
 
 .form_note-wrapper {
   display: flex;
   flex-direction: column;
   /* gap: 10px; */
-  top: 14%;
+  top: 30%;
   align-items: center;
   justify-content: space-around;
-  position: absolute;
+  position: relative;
   width: 366px;
   height: 280px;
 }
@@ -341,7 +359,7 @@
 .goodbye_title {
   position: static;
 
-  width: 50%;
+  width: 45%;
   margin-block-start: 35px;
 
   /* bottom: 40%;
@@ -373,4 +391,13 @@
     margin-top: 50px;
   }
 
+}
+
+@media (height > 1024px) {
+.hero,
+.date,
+.info,
+.form {
+  overflow: visible;
+}
 }
