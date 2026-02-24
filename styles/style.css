@@ -495,7 +495,7 @@
   }
 }
 
-@media (height > 1024px) {
+@media (width > 1024px) {
   .hero,
   .date,
   .info,
