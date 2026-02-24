@@ -316,6 +316,10 @@
   margin-inline-start: 80px;
 }
 
+.details .form_note.second {
+  inline-size: 230px;
+}
+
 .form_title svg {
   overflow: visible;
 }
