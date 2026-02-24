@@ -316,6 +316,10 @@
   margin-inline-start: 80px;
 }
 
+.form_title svg {
+  overflow: visible;
+}
+
 .details .form_note-wrapper {
   position: absolute;
   top: 0%;
